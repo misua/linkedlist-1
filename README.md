@@ -1,6 +1,6 @@
 <div align="center">
-<img src="" align="center" style="width: 100%" />
-</div>  
+<img src="https://github.com/misua/linkedlist-1/blob/main/1686959692362.jpeg" align="center" style="width: 50%" />
+</div>   
   
 
 ### <div align="center">I'm Charles, a full-time Devops,SRE  👨‍💻 working remotely since 2010🚀</div>  
