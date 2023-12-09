@@ -18,7 +18,7 @@ class LinkedList:
        self.tail = new_node
        self.length = 1 # keep track of count
 
-    def pop(self,value):
+    def remove(self,value): #remove first index from list
         if self.head is None:
             return False
         elif self.head.next is None:
@@ -29,7 +29,8 @@ class LinkedList:
         self.length -=1
         return True # kaya pla ang behaviour is it removes NOT the one i supplied as value
     
-
+    
+   
     def pop1(self):
         if self.length == 0:
             return None
