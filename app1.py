@@ -1,4 +1,3 @@
-from os import pread
 from tempfile import tempdir
 from typing import Optional
 
@@ -18,26 +17,43 @@ class LinkedList:
        self.tail = new_node
        self.length = 1 # keep track of count
 
-    def remove(self,value): #remove first index from list
-        if self.head is None:
+
+  
+    def pop_first(self,value): #remove first index from list
+        if self.head is None: # this can self.length == 0 return None
             return False
+        
         elif self.head.next is None:
             self.head = None
             self.tail = None
         else:
             self.head = self.head.next
-        self.length -=1
-        return True # kaya pla ang behaviour is it removes NOT the one i supplied as value
+            self.length -=1
+        return True 
     
-    
+    # def poppy_first(self,value):
+    #     if self.length == 0:
+    #         return None
+        
+    #     temp = self.head
+    #     self.head = self.head.next
+
+    #     temp.next = None
+    #     self.length = None
+    #     if self.length ==0:
+    #         self.tail = None
+    #     return temp
+
+
+
    
-    def pop1(self):
+    def pop_last(self,value): #pop -  Last in first out
         if self.length == 0:
             return None
         temp = self.head
         pre = self.head
 
-        #while (temp.next):
+        #while (temp.next): is true
         while temp.next is not None:
         #and temp.value != value:
             pre = temp 
@@ -56,16 +72,27 @@ class LinkedList:
         
         self.length -=1
 
+
         if self.length == 0:
             self.head = None
             self.tail = None
         return temp.value
 
 
+    def prepend(self,value): #sumpay sa first index sa list
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head #assign new_node to self.head
+            self.head = new_node #point the NEW head node to new_node
+        self.length += 1
+        return True
 
 
 
-    def append(self,value):
+    def append(self,value): #sumpay sa last sa index
         new_node = Node(value)
         if self.head is None: #if there is no new node
             self.head = new_node #point head and tail to the remaining one 
@@ -84,21 +111,38 @@ class LinkedList:
 
 
 
-my_linked_list = LinkedList(3)
+my_linked_list = LinkedList(1)
+print(my_linked_list.print_list())
+print("--running append func")
+my_linked_list.append(2)
 
-my_linked_list.append(1)
+
 
 my_linked_list.print_list()
 
-#my_linked_list.pop(3)
 
+
+print("--running  prepend(add item before index of List)")
+my_linked_list.prepend(0)
+
+my_linked_list.print_list()
+
+print("--running remove(first index sa list)")
+
+
+my_linked_list.pop_first(0)
+my_linked_list.print_list()
+
+print("--running pop(ibta ang tail sa list)")
+my_linked_list.pop_last(2)
+my_linked_list.print_list()
 #input("press enter to clear sceen")
 
 #print('\033c', end='')
-print(my_linked_list.pop1())
-print(my_linked_list.pop1())
-print(my_linked_list.pop1())
-my_linked_list.print_list()
+#print(my_linked_list.pop1())
+#print(my_linked_list.pop1())
+#print(my_linked_list.pop1())
+#my_linked_list.print_list()
 
 
 
