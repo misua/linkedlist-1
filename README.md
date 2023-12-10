@@ -2,8 +2,7 @@
 <img src="https://github.com/misua/linkedlist-1/blob/main/1686959692362.jpeg" align="left" style="width: 10%" />
 </div>   
   
- </td></tr></table>  
-<br/>  
+<br clear="left" /> 
 
 ### <div align="center">I'm Charles, a full-time Devops,SRE  👨‍💻 working remotely since 2010🚀</div>  
   
