@@ -12,11 +12,11 @@
 - 🌱 I’m currently learning Kubernetes,Cloud,any IAC,Python & Go  
   
 
-- ❓ Order of things (class setting initial value to list=1) <br/> 
-     2.) append list() <br/> 
-     3.) print_list()  <br/> 
-     4.) pop_first() & pop_last() <br/> 
-     5.) prepend() <br/> 
+- ❓ Order of things (class setting initial value to list=1), 
+     , append list()  
+     , print_list() 
+     , pop_first() & pop_last() 
+     , prepend() 
 
   
 
