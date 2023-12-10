@@ -1,4 +1,4 @@
-<div align="center">
+<div style="float: left; margin-right: 10px;">
 <img src="https://github.com/misua/linkedlist-1/blob/main/1686959692362.jpeg" align="left" style="width: 10%" />
 </div>   
   
