@@ -13,7 +13,7 @@
 - 🌱 I’m currently learning Kubernetes,Cloud,any IAC,Python & Go  
 
 - ⚡ Fun fact: Fun fact: 
-     My computers have been dancing to the Linux beat for as long as I can remember, turning every tech session into a fun-filled open-source fiesta! 🐧💾
+    <small> My computers have been dancing to the Linux beat for as long as I can remember, turning every tech session into a fun-filled open-source fiesta!</small> 🐧💾
   
 
 - ❓ About this code 
