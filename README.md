@@ -10,17 +10,16 @@
   
 
 - 🌱 I’m currently learning Kubernetes,Cloud,any IAC,Python & Go  
+
+- ⚡ Fun fact: I use Linux on all my computers for as long as i can remember  
   
 
-- ❓ Order of things (class setting initial value to list=1), 
+- ❓ About this code (class setting initial value to list=1), 
      , append list()  
      , print_list() 
      , pop_first() & pop_last() 
      , prepend() 
 
-  
-
-- ⚡ Fun fact: I use Linux on all my computers for as long as i can remember  
   
 
 <br/>  
