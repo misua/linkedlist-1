@@ -12,7 +12,12 @@
 - 🌱 I’m currently learning Kubernetes,Cloud,any IAC,Python & Go  
   
 
-- ❓ Ask me about anything related to Linux and Kubernetes or give me a problem to solve even in software development  
+- ❓ Order of things (class setting initial value to list=1)
+     2.) append list()
+     3.) print_list()
+     4.) pop_first() & pop_last()
+     5.) prepend()
+
   
 
 - ⚡ Fun fact: I use Linux on all my computers for as long as i can remember  

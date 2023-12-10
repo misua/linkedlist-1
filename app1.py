@@ -18,6 +18,23 @@ class LinkedList:
        self.length = 1 # keep track of count
 
 
+    def append(self,value): #sumpay sa last sa index
+        new_node = Node(value)
+        if self.head is None: #if there is no new node
+            self.head = new_node #point head and tail to the remaining one 
+            self.tail = new_node
+        else:
+            self.tail.next = new_node #else the tail.next is assigned to new_node
+            self.tail = new_node # i guess its the same. tail  assigned to new_node
+        self.length +=1
+        return True
+
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next
+
   
     def pop_first(self,value): #remove first index from list
         if self.head is None: # this can self.length == 0 return None
@@ -45,8 +62,6 @@ class LinkedList:
     #     return temp
 
 
-
-   
     def pop_last(self,value): #pop -  Last in first out
         if self.length == 0:
             return None
@@ -91,23 +106,6 @@ class LinkedList:
         return True
 
 
-
-    def append(self,value): #sumpay sa last sa index
-        new_node = Node(value)
-        if self.head is None: #if there is no new node
-            self.head = new_node #point head and tail to the remaining one 
-            self.tail = new_node
-        else:
-            self.tail.next = new_node #else the tail.next is assigned to new_node
-            self.tail = new_node # i guess its the same. tail  assigned to new_node
-        self.length +=1
-        return True
-
-    def print_list(self):
-        temp = self.head
-        while temp is not None:
-            print(temp.value)
-            temp = temp.next
 
 
 
