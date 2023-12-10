@@ -11,7 +11,8 @@
 
 - 🌱 I’m currently learning Kubernetes,Cloud,any IAC,Python & Go  
 
-- ⚡ Fun fact: I use Linux on all my computers for as long as i can remember  
+- ⚡ Fun fact: Fun fact: 
+     My computers have been dancing to the Linux beat for as long as I can remember, turning every tech session into a fun-filled open-source fiesta! 🐧💾
   
 
 - ❓ About this code (class setting initial value to list=1), 
