@@ -4,7 +4,7 @@
   
 <br clear="left" /> 
 
-## <div align="center">I'm Charles, a full-time Devops,SRE  👨‍💻 working remotely since 2010🚀</div>  
+#### <div align="center">I'm Charles, a full-time Devops,SRE  👨‍💻 working remotely since 2010🚀</div>  
   
 
 - 🔭 I’m currently working on my DS skills  
@@ -16,11 +16,14 @@
      My computers have been dancing to the Linux beat for as long as I can remember, turning every tech session into a fun-filled open-source fiesta! 🐧💾
   
 
-- ❓ About this code (class setting initial value to list=1), 
-     , append list()  
-     , print_list() 
-     , pop_first() & pop_last() 
-     , prepend() 
+- ❓ About this code 
+   <ul>
+     <li> (class setting initial value to list=1)
+     <li> append list()  
+     <li> print_list() 
+     <li> pop_first() & pop_last() 
+     <li> prepend() 
+   <ul>
 
   
 
