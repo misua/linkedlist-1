@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/misua/linkedlist-1/blob/main/1686959692362.jpeg" align="center" style="width: 15%" />
+<img src="https://github.com/misua/linkedlist-1/blob/main/1686959692362.jpeg" align="center" style="width: 8%" />
 </div>   
   
 
