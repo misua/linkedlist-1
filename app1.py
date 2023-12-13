@@ -36,15 +36,6 @@ class LinkedList:
             print(temp.value)
             temp = temp.next
 
-    # -----------------
-    def get(self,index):
-        if index < 0 or index >= self.length:
-            return None
-        
-        temp = self.head
-        for _ in range(index):
-            temp = temp.next
-        return temp
 
 
     # def getty(self,index):
@@ -138,7 +129,18 @@ class LinkedList:
         self.length += 1
         return True
     
-    def set_value1(self,index,value): #b3lat wa na mao!
+       # -----------------
+    def get(self,index):
+        if index < 0 or index >= self.length:
+            return None
+        
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        return temp
+
+    
+    def set_value1(self, index, value): #b3lat wa na mao!
         temp = self.get(index)
         if temp:
             temp.value = value
@@ -148,13 +150,31 @@ class LinkedList:
 
 # ----------------------------------
 
+    def insert_value(self,index,value):
+        if index < 0 or index >= self.length:
+            return False
+        
+        if index == 0:
+            return self.prepend(value)
+        elif index == self.length:
+            return self.append(value)
 
-my_linked_list = LinkedList(1)
-print(my_linked_list.print_list())
+        new_node = Node(value)
+        temp = self.get(index - 1)
+        new_node.next = temp.next
+        temp.next = new_node
+        print("inserted {} at index {}".format(value,index))
+        self.length +=1
+        return True
+    
+        
 
-print("--running append func")
-my_linked_list.append(2)
-my_linked_list.print_list()
+my_linked_list = LinkedList(0)
+# print(my_linked_list.print_list())
+
+# print("--running append func")
+# my_linked_list.append(1)
+
 
 
 # print("--running prepend(add item b4 index of List)")
@@ -168,12 +188,21 @@ my_linked_list.print_list()
 # print("--running pop() (ibta ang tail sa list)")
 # my_linked_list.pop_last(2)
 # my_linked_list.print_list()
-my_linked_list.append(5)
-my_linked_list.append(6)
-
-print("--running set value w/ loc as index val")
-my_linked_list.set_value1(1,66)
+print("--printing old list--")
+my_linked_list.append(2)
+my_linked_list.append(3)
 my_linked_list.print_list()
+
+
+# print("--running set value w/ loc as index val")
+# my_linked_list.set_value1(1,66)
+
+my_linked_list.insert_value(1,1)
+my_linked_list.print_list()
+
+# print("--running get func")
+# print(my_linked_list.get(2))
+# my_linked_list.print_list()
 # input("press enter to clear sceen")
 
 # print('\033c', end='')
