@@ -168,8 +168,30 @@ class LinkedList:
         return True
     
         
+# ----------------------------------
+    
 
-my_linked_list = LinkedList(0)
+
+
+    def remove_value(self,index):
+        if index < 0 or index >= self.length:
+            return None
+        
+        if index ==0:
+            return self.pop_first()
+        elif index == self.length -1:
+            return self.pop_last()
+        
+        prev = self.get(index - 1)
+        temp = prev.next
+        prev.next = temp.next
+        temp.next = None
+        self.length = -1
+        print("the removed index: {}".format(index))
+       
+        return temp
+
+my_linked_list = LinkedList(10)
 # print(my_linked_list.print_list())
 
 # print("--running append func")
@@ -189,15 +211,18 @@ my_linked_list = LinkedList(0)
 # my_linked_list.pop_last(2)
 # my_linked_list.print_list()
 print("--printing old list--")
-my_linked_list.append(2)
-my_linked_list.append(3)
+my_linked_list.append(12)
+my_linked_list.append(11)
+my_linked_list.append(13)
+
 my_linked_list.print_list()
 
 
 # print("--running set value w/ loc as index val")
 # my_linked_list.set_value1(1,66)
 
-my_linked_list.insert_value(1,1)
+#my_linked_list.insert_value(1,1) // inserting something @ index
+my_linked_list.remove_value(2)   # removing something at index
 my_linked_list.print_list()
 
 # print("--running get func")
