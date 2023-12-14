@@ -138,8 +138,7 @@ class LinkedList:
         for _ in range(index):
             temp = temp.next
         return temp
-
-    
+   
     def set_value1(self, index, value): #b3lat wa na mao!
         temp = self.get(index)
         if temp:
@@ -167,9 +166,40 @@ class LinkedList:
         self.length +=1
         return True
     
+
+# ----------------------------------
+
+    def remove_value(self,index,value):
+        if index < 0 or index >= self.length:
+            return None
+        if index == 0:
+            return self.pop_first
+        if index == self.length -1:
+            return self.pop_last
         
+<<<<<<< HEAD
 # ----------------------------------
     
+=======
+        # temp = self.index.value
+        # prev = self.get(index - 1)
+
+        # if temp:
+        #     temp.next +=1
+        # else
+        
+        else:
+            current = self.head
+            for _ in range(index -1):
+              if current is None:
+                raise IndexError("index out of range")
+              current = current.next
+            current.next = current.next.next
+        print("removed {} at index {}".format(value,index))
+        self.length +=1
+        return True
+
+>>>>>>> 8519313 (from room pc version)
 
 
 
@@ -210,19 +240,33 @@ my_linked_list = LinkedList(10)
 # print("--running pop() (ibta ang tail sa list)")
 # my_linked_list.pop_last(2)
 # my_linked_list.print_list()
+<<<<<<< HEAD
 print("--printing old list--")
 my_linked_list.append(12)
 my_linked_list.append(11)
 my_linked_list.append(13)
 
+=======
+print("-- printing old list --")
+my_linked_list.append(1)
+my_linked_list.append(2)
+my_linked_list.append(3)
+>>>>>>> 8519313 (from room pc version)
 my_linked_list.print_list()
 
 
 # print("--running set value w/ loc as index val")
 # my_linked_list.set_value1(1,66)
 
+<<<<<<< HEAD
 #my_linked_list.insert_value(1,1) // inserting something @ index
 my_linked_list.remove_value(2)   # removing something at index
+=======
+#my_linked_list.insert_value(1,1)
+
+
+my_linked_list.remove_value(2,2)
+>>>>>>> 8519313 (from room pc version)
 my_linked_list.print_list()
 
 # print("--running get func")
